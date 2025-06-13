@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "build": {
+    "publish": "portfolio",
+    "command": ""
+  },
+  "redirects": [
+    {
+      "from": "/*",
+      "to": "/index.html",
+      "status": 200
+    }
+  ]
+}

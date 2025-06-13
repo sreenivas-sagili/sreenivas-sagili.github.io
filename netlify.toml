@@ -1,0 +1,19 @@
+[build]
+  # The directory where your site is located
+  publish = "portfolio"
+
+  # No build command needed for a static HTML site
+  command = ""
+
+# Redirects and headers
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Simple headers for now
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
